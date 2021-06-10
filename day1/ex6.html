@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>doc</title>
+</head>
+
+<body>
+
+    <script>
+
+        n = parseInt(prompt('Enter the number of terms: '));
+        count = 0;
+
+        for (let i = 0; count != n; i++) {
+            if (n == count) {
+                break;
+
+            }
+            else if (i == 2 || i == 3 || i == 5) {
+                document.write(i + "<br>");
+                count++;
+
+            }
+            else if (i % 2 == 0 || i % 3 == 0 || i % 5 == 0 || i == 1) {
+                continue;
+
+            }
+            else {
+                document.write(i + "<br>");
+                count++;
+            }
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
